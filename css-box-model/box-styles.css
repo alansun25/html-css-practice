@@ -1,0 +1,81 @@
+* { /* universal CSS selector matches every HTML element */
+  /* override default styles of browser */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, p {
+  background-color: #DDE0E3; /* Light Gray; fills in background of box */
+}
+
+em, strong {
+  background-color: #B2D6FF; /* Light Blue; fills in background of box */
+  display: inline; /* This is default for em and strong */
+}
+
+/*
+You can change box type of HTML elements with 'display: insertboxtype';
+useful when trying to turn <a> elements into buttons or format <img/>
+elements (both of these are inline boxes by default)
+*/
+
+h1 {
+  padding: 50px;
+  border-bottom: 1px solid #5D6063; /* Syntax: border width, style, color */
+  /*
+  border: a line drawn around the content and padding of an element
+  - has bottom, top, left, right variants
+  */
+  width: 600px;
+  margin: 20px auto;
+}
+
+p {
+  padding: 20px 10px;
+  /*
+  Vertical Horizontal
+  - Same as shorthand formatting:
+      padding: 20px 10px 20px 10px (clockwise, starting from top)
+      - and -
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+  */
+
+  margin-bottom: 50px;
+  margin-top: 25px; /* This margin 'collapses' into the bigger 50px one */
+  /*
+  Margins define the space outside of an element’s border.
+  Or, rather, the space between a box and its surrounding boxes.
+  Accepts same shorthand formatting as padding.
+  */
+}
+
+div { /* a <div> is a generic box */
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  width: 200px;
+  box-sizing: border-box; /* forces the actual width of the box to be 200px,
+                             including padding and borders */
+  margin: 20px auto; /* Vertical Horiontal */
+}
+
+body {
+  text-align: center; /* only aligns content, not the boxes themselves */
+}
+
+/*
+KEY CONCEPTS:
+    Everything is a box.
+    Boxes can be inline or block-level.
+    Boxes have content, padding, borders, and margins.
+    They also have seemingly arbitrary rules about how they interact.
+    Mastering the CSS box model means you can lay out most web pages.
+*/

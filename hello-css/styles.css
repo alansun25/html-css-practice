@@ -1,0 +1,80 @@
+/* This is an external CSS stylesheet */
+
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+  font-size: 18px; /* Base font size */
+}
+
+/*
+A CSS “rule” always start with a “selector” that defines which HTML elements
+it applies to (this case's selector is 'body'). In this case, we’re trying to
+style the <body> element. After the selector, we have the “declarations block”
+inside of some curly braces. Any “properties” we set in here will affect the
+<body> element.
+
+'color' is a built-in property defined by the CSS specification that determines
+the text color of whatever HTML elements have been selected. It accepts a
+hexadecimal value representing a color.
+
+The 'background-color' property is very similar to the 'color' property, but it
+defines the background color of whatever element you selected. Take a second to
+admire those semicolons at the end of each declaration. Removing them will break
+the CSS rule, so always mind your semicolons!
+*/
+
+/* ------------------------------------ */
+
+h1 {
+  font-size: 2em; /* Font size relative to base */
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal; /* Un-bolds headings */
+  font-style: italic; /* Italicizes headings */
+}
+/*
+1. 'font-family' is another built-in CSS property that defines the typeface for
+whatever element you selected. It accepts multiple values because not all users
+will have the same fonts installed. With the above snippet, the browser tries to
+load the left-most one first (Helvetica), falls back to Arial if the user doesn’t
+have it, and finally chooses the system’s default sans serif font.
+
+2. The 'font-weight' property defines the “boldness” of the text in an element,
+and the 'font-style' property indicates whether it’s italicized or not. You can swap
+the funtions of <em> and <strong> with these properties. We don’t suggest doing
+this for real websites though. Font weights and styles will, however, become a
+lot more important once we start playing with custom fonts in the
+Web Typography chapter.
+*/
+
+/* ------------------------------------ */
+
+/*
+The list-style-type property lets you alter the bullet icon used for
+<li> elements.
+*/
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+/* -----------------more text styles------------------ */
+
+a {
+  text-decoration: none; /* Removes underline from links */
+}
+
+p {
+  text-align: left; /* Aligns all paragraphs to the left (other accepted values
+                       are right and justify) */
+}

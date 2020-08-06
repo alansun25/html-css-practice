@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Links</title>
+  </head>
+  <body>
+    <!-- Links are created with the <a> element, which stands for “anchor”. -->
+    <h1>Links</h1>
+    <p>This example is about links and <a href='images.html'>images</a>.</p> <!-- "href" is an attribute; in this case, it links to the images.html file -->
+
+    <p>This particular page is about links! There are three kinds of links:</p>
+    <ul>
+      <li>Absolute links, like to
+        <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+           target='_blank'>Mozilla Developer Network</a>, which is a very good resource
+           for web developers.</li> <!-- most detailed way you can refer to a web resource; usually used for directing to a different website -->
+           <!-- the "target" attribute defines where to display the page when clicked: replace current page of open new tab; replace current
+            page is the default, but "_blank" indicates new tab -->
+      <li>Relative links, like to our <a href='misc/extras.html'>extras page</a>.</li> <!-- point to another file in your website from the vantage point of
+      the file you are editing; it’s implied that the scheme and domain name are the same as the current page - the only thing you need to supply is the path. -->
+      <li>Root relative links are relative to the "root" of the entire website. For instance, if your website is hosted on our-site.com, all root-relative URLs
+      will be relative to our-site.com. Unfortunately, there is one caveat to our discussion of root-relative links: this entire tutorial uses local HTML files
+      instead of a website hosted on a web server. This means we won’t be able to experiment with root-relative links. Scroll down to 'Root-relative Links' on
+      <a href='https://www.internetingishard.com/html-and-css/links-and-images/'>this</a> page for more detailed info.</li>
+    </ul>
+  </body>
+</html>

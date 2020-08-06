@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Design</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+</head>
+
+<body>
+  <div class='page'>
+    <div class='section menu'></div>
+    <div class='section header'>
+      <div class="photo">
+        <picture>
+          <source media='(min-width: 401px)' srcset='images/responsive-img/photo-big.jpg'/>
+          <source media='(max-width: 400px)' srcset='images/responsive-img/photo-tall.jpg'/>
+          <img src="images/photo-small.jpg"/>
+        </picture>
+        <!-- Recommendation is to stick to the 1x and 2x version of srcset for images less than 600
+        pixels wide, use the srcset plus sizes method from the previous section for bigger photos,
+        and reserve <picture> for when you’re trying to do something real fancy with your designer. -->
+      </div>
+    </div>
+    <div class='section content'>
+      <div class="illustration">
+        <img src="images/responsive-img/illustration-small.png"
+             srcset="images/responsive-img/illustration-small.png 1x,
+                     images/responsive-img/illustration-big.png 2x"
+             style="max-width : 500px"/>
+          <!-- This is one of the rare times an inline style is acceptable,
+          due to the fact that it’s describing an innate property of the image.
+          An image’s physical dimensions are more content than presentation, so
+          it makes sense for this to appear in the HTML rather than the
+          stylesheet. -->
+      </div>
+    </div>
+    <div class='section sign-up'>
+      <img src='images/sign-up.svg' />
+    </div>
+    <div class='section feature-1'>
+      <img src='images/feature.svg' />
+    </div>
+    <div class='section feature-2'>
+      <img src='images/feature.svg' />
+    </div>
+    <div class='section feature-3'>
+      <img src='images/feature.svg' />
+    </div>
+  </div>
+
+</body>
+
+</html>

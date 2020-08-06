@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'> <!-- makes default language English -->
+  <head>
+    <title>Extras</title>
+    <meta charset='UTF-8'/>
+  </head>
+  <body>
+    <h1>Extras</h1>
+    <!-- Since extras.html is in a different folder from links and images, you can't directly refernce links or images in the "a"
+    tag - links and images are in the parent foler, so you have to use the .. syntax to refer to the directory above misc -->
+    <p>This page is about miscellaneous HTML things, but you may also be interested in <a href='../links.html'>links</a> or
+    <a href='../images.html'>images</a>.</p> <!-- To navigate up through multiples directories, use multiple .. references -->
+
+    <h2>Character Sets</h2>
+    <p>You can use UTF-8 to count in Turkish:</p> <!-- Attribute that does this is in the "head" element -->
+
+    <ol>
+      <li>bir</li>
+      <li>iki</li>
+      <li>üç</li>
+      <li>dört</li>
+      <li>beş</li>
+    </ol>
+
+    <h2>HTML Entities</h2>
+    <p>There are three <em>reserved characters</em> in HTML: &lt; &gt; and &amp;
+       You should always use HTML entities for these three characters.</p>
+    <p>Entities always begin with an ampersand and end with a semicolon.
+       In between, you put a special code that your browser will interpret as a symbol.
+       In this case, it interprets lt, gt, and amp as less-than, greater-than, and ampersand
+       symbols, respectively. There’s a crap-ton of HTML entities. We’ll leave you to explore
+       <a href='https://dev.w3.org/html5/html-author/charref' target='_blank'>most of them</a>
+       on your own.</p>
+    <p>If you&rsquo;re into &ldquo;web typography,&rdquo; you&rsquo;ll also find yourself
+       using curly quotes quite a bit (look at code for entities).</p
+    <!--
+    &ldquo; left double quote
+    &rdquo; right double quote
+    &lsquo; left single quote
+    &rsquo; right single quote
+    -->
+
+    <!--
+    In the olden days of the web, HTML files weren’t allowed to have special characters in
+    them, making entities much more useful. But, since we’re now using a UTF-8 character set,
+    we should be able to insert any character directly into the HTML document. This makes
+    entities primarily useful as reserved characters or for convenience when authoring straight HTML.
+    -->
+  </body>
+</html>
+
+<!--
+Basic template you should use as the beginning of every web page you ever create:
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Some Web Page</title>
+  </head>
+  <body>
+    <h1>Some Web Page</h1>
+    ... Rest of the content
+  </body>
+</html>
+-->

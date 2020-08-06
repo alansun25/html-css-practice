@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- tell browsers that this is an HTML5 web page; always needs to look exactly like this -->
+<html> <!-- html tags must wrap the entire webpage; this is the opening tag -->
+  <head>
+    <!-- Metadata goes here (head contains all metadata like page title, and CSS stylesheets, and other things needed to render the page
+    but you don't necessarily want the user to see) -->
+      <title>Interneting Is Easy!</title> <!-- Browsers display the title element in the page tab and Google search display; this
+      element should always be in <head> -->
+  </head>
+  <body>
+    <!-- Content goes here (bulk of html markup; visible content of the page) -->
+      <h1>Interneting is Easy!</h1> <!-- heading element is displayed on page; there are sixe levels of headings: h1 to h6,
+      the higher the number the less prominent the heading -->
+      <p>First, we need to learn some basic HTML.</p> <!-- paragraph element marks text inside as distinct paragraph; must be
+      in <body> element -->
+
+      <h2>Headings</h2>
+      <p>Headings define the outline of the site. There are six levels of headings: h1 to h6. By default, browsers render less important headings in smaller fonts.</p>
+
+      <h2>Lists</h2>
+      <p>This is how you make an UNORDERED list:</p>
+      <ul>
+        <!-- <ul> tells browser it's a list; <li> indicates individual items in the list -->
+        <li>Add a "ul" element (stands for unordered lists)</li>
+        <li>Add each item in its own "li" element</li>
+        <li>They don't need to be in any particular order</li>
+        <li> "ul" elements can ONLY contain "li" elements</li>
+        <li> So, if you want a paragraph in a "ul", wrap it with an "li", like so:</li>
+        <li><p>This is a "p" element wrapped in an "li" element</li>
+      </ul>
+
+      <p>This is what an ORDERED list looks like:</p>
+      <ol>
+        <li>Notice the new "ol" element wrapping everything</li>
+        <li>But, the list item elements are the same</li>
+        <li>Also note how the numbers increment on their own</li>
+        <li>You should be noticing things in this precise order, because this is an ordered list</li>
+      </ol>
+
+      <h2>Inline Elements</h2>
+      <!-- <em> stands for emphasis (typically italics) -->
+      <p><em>Sometimes</em>, you need to draw attention to a particular word of phrase.</p>
+      <!-- <strong> makes text bold -->
+      <p>Other times you need to <strong>strong</strong>ly emphasize the importance of a word of phrase.</p>
+      <!-- You can also next strong inside of em, or vice versa -->
+      <p><em><strong>And sometimes you need to shout!</strong></em></p>
+
+      <h2>Empty Elements</h2>
+      <p>The HTML tags we’ve encountered so far either wrap text content (e.g., "p") or other HTML elements (e.g., "ol").
+      That’s not the case for all HTML elements. Some of them can be “empty“ or “self-closing”. Line breaks and horizontal
+      rules are the most common empty elements you’ll find.</p>
+      <p>To tell the browser that we want a hard line break, we need to use an explicit "br/" element.</p>
+      <p>Sincerely, (there's a  "br/" element here in the code)<br/>
+      Alan</p>
+      <!-- Don't abuse the br/ tag; for example, don't use it to add a bunch of space between paragraphs - this will
+      be defined in CSS. -->
+      <p> The  "hr/" element is the "horizontal rule", which represents a thematic break. The transition from one scene of a
+      story to the next or between the end of a letter and a postscript are good examples of when a horizontal rule may be
+      appropriate. For example:</p>
+      <p>Thanks for reading!</p>
+      <p>Regards, <br/>
+      Alan</p>
+
+      <hr/>
+
+      <p>P.S. This  page might look like crap, but we'll fix that with CSS soon. (There's an "hr/" tag above the P.S. in the code.)</p>
+
+      <p>"hr/" default appearance is a horizontal line, but this can be modified with CSS later.</p>
+  </body>
+</html> <!-- this is the closing html tag; everything inside the opening and closing tags are part of the <html> element -->
+
+<!-- Comment syntax: anything that starts with <!-- and ends with -->
